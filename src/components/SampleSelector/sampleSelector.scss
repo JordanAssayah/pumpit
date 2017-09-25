@@ -1,0 +1,31 @@
+#sample-selector {
+  .panel-body {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      list-style-type: none;
+
+      li {
+        cursor: pointer;
+        user-select: none;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: rgba(#000, 0.05);
+        }
+        &:active,
+        &:focus {
+          background-color: rgba(#000, 0.15);
+        }
+        &:not(:last-child) {
+          border-bottom: 1px dashed rgba(#000, 0.3);
+        }
+      } 
+    }
+  }
+}
